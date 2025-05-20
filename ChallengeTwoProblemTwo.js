@@ -2,13 +2,11 @@
 
 function gcd (a,b){
     while (b !== 0) {
-       
-       
         [a,b] = [b, a % b]
     }
     return a;
 
-
+}
 
 //function lcm gives you the least common multiple i believe
 
@@ -17,14 +15,14 @@ function lcm (a, b) {
 }
 
 
-function smallestMultiple (limit){
+function smallestMultiple(limit){
 
-
-    let result =1}
-
+   
+    let result =1
 for (let i = 2; i <= limit; i++) {
-
+    result = lcm(result, i);
 }
+
 return result;
 }
 
